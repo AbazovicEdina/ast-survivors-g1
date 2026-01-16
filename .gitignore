@@ -1,0 +1,42 @@
+# --- Unreal Engine ---
+# Build products
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Plugins (ignore their build products too)
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# IDE / tool folders
+.vscode/
+.idea/
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userprefs
+*.vs/
+.vs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs / temp
+*.log
+*.tmp
+
+# Packaged builds (optional: keep if you want to version releases)
+Packaged/
+Releases/
+
+# --- Unreal auto-generated config/backups ---
+# Keep Default*.ini (project settings), ignore local/user-specific ones
+Saved/Config/
