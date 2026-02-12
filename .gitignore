@@ -1,18 +1,38 @@
-# --- Unreal Engine ---
-# Build products
+# =========================
+# Unreal Engine 5 (Blueprint + C++)
+# Config is committed
+# =========================
+
+# --- Generated / build output ---
 Binaries/
 Build/
 DerivedDataCache/
 Intermediate/
 Saved/
 
-# Plugins (ignore their build products too)
+# --- Plugin generated folders (keep Plugins/**/Source and Plugins/**/Content) ---
 Plugins/*/Binaries/
 Plugins/*/Intermediate/
+Plugins/*/Saved/
+Plugins/*/DerivedDataCache/
 
-# IDE / tool folders
+# --- Packaged / staged builds ---
+StagedBuilds/
+PackagedBuilds/
+Packaging/
+Packaged/
+Releases/
+
+# --- Crash reports ---
+Crashes/
+
+# --- IDE / tool folders ---
+.vs/
 .vscode/
 .idea/
+*.code-workspace
+
+# --- Unreal/IDE project files ---
 *.sln
 *.xcodeproj
 *.xcworkspace
@@ -21,23 +41,48 @@ Plugins/*/Intermediate/
 *.suo
 *.user
 *.userprefs
-*.vs/
-.vs/
+*.VC.db
+*.VC.opendb
 
-# OS junk
+# --- C++ build artifacts ---
+*.obj
+*.o
+*.lo
+*.la
+*.a
+*.lib
+*.dll
+*.dylib
+*.so
+*.pdb
+*.idb
+*.ipch
+
+# --- Logs / temp ---
+*.log
+*.tmp
+
+# --- OS junk ---
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# Logs / temp
-*.log
-*.tmp
+# =========================
+# Config rules
+# =========================
 
-# Packaged builds (optional: keep if you want to version releases)
-Packaged/
-Releases/
+# Track everything in Config...
+!Config/**
 
-# --- Unreal auto-generated config/backups ---
-# Keep Default*.ini (project settings), ignore local/user-specific ones
+# ...but ignore user-/editor-specific config files
+Config/**/EditorPerProjectUserSettings.ini
+Config/**/EditorSettings.ini
+Config/**/User*.ini
+
+# Saved config is always generated
 Saved/Config/
-LivingRoom.zip
+
+# =========================
+# Optional: ignore zip archives anywhere 
+# =========================
+*.zip
