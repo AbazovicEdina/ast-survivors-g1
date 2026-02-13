@@ -16,7 +16,7 @@
 #endif
 
 // Path to Stockfish executable
-const char* path = "C:\\Users\\edina\\Studium\\WS_2025\\FinalAST\\LivingRoom\\Source\\Stockfish\\Stockfish-Windows\\stockfish.exe";
+const char* path = "C:\\Users\\nikol\\Documents\\3. Semester\\Applied Software Techniques\\UnrealProjects\\LivingRoom_Lesson10 - Kopie4\\Source\\Stockfish\\Stockfish-Windows\\stockfish.exe";
 
 #ifdef _WIN32
 // This method uses the MultiByteToWideChar function from the Windows API to perform the conversion.
