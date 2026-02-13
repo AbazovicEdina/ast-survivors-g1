@@ -33,7 +33,7 @@ Crashes/
 *.code-workspace
 
 # --- Unreal/IDE project files ---
-*.sln
+#*.sln
 *.xcodeproj
 *.xcworkspace
 *.opensdf
