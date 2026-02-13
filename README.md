@@ -2,7 +2,6 @@ Edina Abazovic:
 * Automatische Lichter
 * Game Logik (vom eigenen Spiel)
 * \+ der Rest (vom eigenen Spiel)
-* HUD Implementierung (vom eigenen Spiel)
 
 Selina Catic:
 * Landschaftsgestaltung
